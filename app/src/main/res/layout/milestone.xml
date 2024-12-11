@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    tools:context=".MilestonesActivity">
+
+    <!-- Title -->
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="379dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/journey_complete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvAchievementsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:text="Your Achievements"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Achievements List -->
+    <LinearLayout
+        android:id="@+id/achievementsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAchievementsTitle">
+
+        <!-- Achievement Item 1 -->
+        <LinearLayout
+            android:id="@+id/achievementBreathing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iconBreathing"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Breathing Exercise Status Icon"
+                android:src="@drawable/ic_loading" />
+
+            <TextView
+                android:id="@+id/textBreathing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Breathing Exercise Completed"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Achievement Item 2 -->
+        <LinearLayout
+            android:id="@+id/achievementMotivational"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iconMotivational"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Motivational Story Status Icon"
+                android:src="@drawable/ic_loading" />
+
+            <TextView
+                android:id="@+id/textMotivational"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Read Motivational Story Completed"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Achievement Item 3 -->
+        <LinearLayout
+            android:id="@+id/achievementCraving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iconCraving"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Resist Craving Status Icon"
+                android:src="@drawable/ic_loading" />
+
+            <TextView
+                android:id="@+id/textCraving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Resist Craving Completed"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBackMilestone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6A9B76"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+</androidx.constraintlayout.widget.ConstraintLayout>
